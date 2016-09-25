@@ -59,18 +59,14 @@ iframe {
     background-color: burlywood;
     margin: 45px 0 0 45px;    
     float: left;
-    border: 2px solid black;
-    border-radius: 20px;
     }
 
 .break {
+    clear: both;
 }
     
 
-#tableDiv {
-        width: 800px; 
-        margin-top: 45px;
-    }
+
     
 th, td {
     border: 1px solid black;
@@ -90,21 +86,28 @@ table {
     margin-top: 45px; 
     border-collapse: collapse;
     border-spacing: 1em;     
-    }
-
-.break {
+   }
+    .break {
     clear: both;
 }
 
-    #jimmy {
-        margin-left: 200px;
-        
-    }
-    
     #audio1 {
         float: left
     }
     
+    #table2 {
+      height: 200px;
+      width: 800px;
+     float: left;
+     margin-left: 150px;
+     }
+    
+             
+   
+    
+    #table2 td{
+         border-color: burlywood;  
+    }
     #audio1 {
         float: left;
          }
@@ -171,7 +174,7 @@ table {
         <h6>Portland, Maine</h6>
     </div>
   
- <div class="container resposive" id="tableDiv">
+<div class="container">      
      <table class="table table-hover"> 
        <tr align="left"><th>Artist</th><th>Lives In</th><th>Features</th><th colspan="2">Links</th></tr>
        <tr><td>Jimmy</td><td>Westbrook,Me</td><td>Bass,Vocals</td><td colspan="2"><a href="https://youtu.be/Y2zrlIDnldc">Jimmy Macisso Band</a></td></tr>
@@ -179,6 +182,7 @@ table {
        <tr><td>Marc</td><td>Los Angeles,CA</td><td>Sax,Harp,Flute,Vocals etc</td><td><a href="http://marcmacisso.com">marcmacisso.com</a></td><td><a href="https://youtu.be/FZYF16sSeUQ">Just My Imagination</a></td></tr>
        </table>
 </div>
+
     
  <div class="break"></div>
     <br /> <br /> <br />
@@ -193,60 +197,29 @@ table {
     <h4>Big River - Tommy </h4>
     <audio controls><source src="audio/BigRiver.mp3"/></audio> 
      <h4>Sorry For You - Tommy</h4>
-    <audio id="sorry" controls><source src="audio/Sorry4UFriend.mp3"/></audio>
+    <audio controls><source src="audio/Sorry4UFriend.mp3"/></audio>
     
 </div>
     
       
-        
-        <img id="jimmy" src="images/jimmy.jpg"/>
-        <img id ="tommy" src="images/tomm.jpg"/>
-        <img id="marc" src="images/marc_sax.jpg"/>
 
-
+<table class="table" id="table2">
+        <tr><td><img src="images/jimmy.jpg"/></td>
+        <td><img src="images/tomm.jpg"/></td>
+        <td><img src="images/marc_sax.jpg"/></td></tr>
+</table>
 
 
 <div id="audio2">
     <h4>Me And Mrs Jones - Jimmy</h4>
-    <audio id="jones" controls><source src="audio/MeAndMrsJones.mp3"/></audio> 
+    <audio controls><source src="audio/MeAndMrsJones.mp3"/></audio> 
     <h4>Walking The Floor - Tommy</h4>
     <audio controls><source src="audio/WalkingTheFloor.mp3"></audio> 
     <h4>Tennesee Stud - Tommy</h4>
     <audio controls><source src="audio/TenneseeStud.mp3"/></audio>
     <h4>Cruisin - Marc</h4>
-    <audio id="cruisin" controls><source src="audio/Cruisin.mp3"/></audio> 
+    <audio controls><source src="audio/Cruisin.mp3"/></audio> 
 </div>
 
-    
-    <script>
-    
-    /*
-    $("#jimmy").click(function() {
-                      
-                      alert("Jimmy");
-    });
-    */
-        
-    document.getElementById("jimmy").onclick=function() {
-        
-        var myAudio1 = document.getElementById("jones");
-        myAudio1.play();
-        
-    }
-    
-    document.getElementById("marc").onclick=function() {
-        
-        var myAudio2 = document.getElementById("cruisin");
-        myAudio2.play();
-    }
-    
-    document.getElementById("tommy").onclick=function() {
-        
-        var myAudio3 = document.getElementById("sorry");
-        myAudio3.play();
-    }
-    
-    
-    </script>
 </body>
 </html>
