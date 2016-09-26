@@ -63,19 +63,6 @@ iframe {
     border-radius: 20px;
     }
 
-#artistDiv {
-    margin-top: 45px;
-    font-size: 120%;
-}
-
-    
-#artist {
-    
-}
-    
-    .col-md-1, .col-md-2 {
-    }
-
 .break {
 }
     
@@ -85,9 +72,6 @@ iframe {
         margin-top: 45px;
     }
     
-.table {
-                    
-    }
 th, td {
     border: 1px solid black;
     padding: .25em;
@@ -107,18 +91,6 @@ table {
     border-collapse: collapse;
     border-spacing: 1em;     
     }
-
-@media screen and (max-width: 1024px) {
-    .table {
-        display: none !important;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .row {
-        display: none !important;
-    }
-}
 
 .break {
     clear: both;
@@ -176,65 +148,36 @@ table {
 <div class="container" id="perform">
      <h3>Performing at ..</h3>
   
-        <form action="http://www.thefrogandturtle.com" target="_blank">
+        <form action="http://www.thefrogandturtle.com">
         <input type="submit" value="Frog and Turtle" />
         </form>
         <h6>Westbrook, Maine</h6>
  
-        <form action="http://embassysuites3.hilton.com/en/hotels/maine/embassy-suites-by-hilton-portland-maine-PWMAPES/index.html" target="_blank">
+        <form action="http://embassysuites3.hilton.com/en/hotels/maine/embassy-suites-by-hilton-portland-maine-PWMAPES/index.html">
         <input type="submit" value="Embassy Suites" />
         </form>
          <h6>So. Portland, Maine</h6>
 
-        <form action="http://www.hbamaine.com/" target="_blank">
+        <form action="http://www.hbamaine.com/">
         <input type="submit" value="Higgins Beach" />
         </form>
         <h6>Scarboro, Maine</h6>
     
     
    
-        <form action="http://italianheritagecenter.com/" target="_blank">
+        <form action="http://italianheritagecenter.com/">
         <input type="submit" value="Italian Heritage Ctr" />
         </form>
         <h6>Portland, Maine</h6>
     </div>
-
- <div class="container responsive" id="tableDiv">
+  
+ <div class="container resposive" id="tableDiv">
      <table class="table table-hover"> 
        <tr align="left"><th>Artist</th><th>Lives In</th><th>Features</th><th colspan="2">Links</th></tr>
        <tr><td>Jimmy</td><td>Westbrook,Me</td><td>Bass,Vocals</td><td colspan="2"><a href="https://youtu.be/Y2zrlIDnldc">Jimmy Macisso Band</a></td></tr>
        <tr><td>Tommy</td><td>Louisville,KY</td><td>Guitar,Vocals</td><td colspan="2"><a href="https://youtu.be/Rbd4r6Wk1js">Jackson</a></tr>
        <tr><td>Marc</td><td>Los Angeles,CA</td><td>Sax,Harp,Flute,Vocals etc</td><td><a href="http://marcmacisso.com">marcmacisso.com</a></td><td><a href="https://youtu.be/FZYF16sSeUQ">Just My Imagination</a></td></tr>
        </table>
-
-</div>
-
- <div class="container" id="artistDiv">
-    <div class="row" id="artist">
-        <div class="col-md-1" style="font-weight:bold">Jimmy</div>
-        <div class="col-md-1">Westbrook,ME</div>
-        <div class="col-md-1">Bass,Vocals</div>
-        <div class="col-md-2"><a href="https://youtu.be/Y2zrlIDnldc" target="_blank">Jimmy Macisso Band</a></div>
-    </div>
-     
-   <br />
-    
-     <div class="row">
-          <div class="col-md-1"style="font-weight:bold">Tommy</div>
-          <div class="col-md-1">Louisville,KY</div>
-          <div class="col-md-1">Guitar,Vocals</div>
-          <div class="col-md-2"><a href="https://youtu.be/Rbd4r6Wk1js" target="_blank">Jackson</a></div>         
-    </div>
-    
-      <br />
-     
-     <div class="row">
-          <div class="col-md-1"  style="font-weight:bold">Marc</div>
-        <div class="col-md-1">Los Angeles,CA</div>
-         <div class="col-md-1">Sax,Harp,Flute,Vocals etc</div>
-          <div class="col-md-2"><a href="http://marcmacisso.com" target="_blank">marcmacisso.com</a></div>
-          <div class="col-md-2"><a href="https://youtu.be/FZYF16sSeUQ" target="_blank">Just My Imagination</a></div>
-    </div>         
 </div>
     
  <div class="break"></div>
@@ -305,33 +248,5 @@ table {
     
     
     </script>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js">
-    
- 
-/*        
-$(window).resize(function() {
-
-   if ($(this).width() < 1024) {
-
-    $('.table').hide();
-
-  } else {
-
-    $('.table').show();
-    }
-
-});
-*/    
-        
-    
-    
-    
-    </script>
-   
-   
 </body>
 </html>
