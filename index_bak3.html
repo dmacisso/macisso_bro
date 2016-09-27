@@ -251,13 +251,14 @@ table {
     <audio controls><source src="audio/BigRiver.mp3"/></audio> 
      <h4>Sorry For You - Tommy</h4>
     <audio id="sorry" controls><source src="audio/Sorry4UFriend.mp3"/></audio>
+    
 </div>
     
       
         
-    <a onClick="togglePlay1()" ><img id="jimmy" src="images/jimmy.jpg"/> </a>
-    <a onClick="togglePlay2()"><img id ="tommy" src="images/tomm.jpg"/> </a>
-    <a onClick="togglePlay3()"><img id="marc" src="images/marc_sax.jpg"/> </a>
+        <img id="jimmy" src="images/jimmy.jpg"/>
+        <img id ="tommy" src="images/tomm.jpg"/>
+        <img id="marc" src="images/marc_sax.jpg"/>
 
 
 
@@ -276,43 +277,22 @@ table {
     
     <script>
     
-    
-/*    $("#jimmy").click(function() {
+    /*
+    $("#jimmy").click(function() {
                       
                       alert("Jimmy");
     });
-    
+    */
         
-    
-        document.getElementById("jimmy").onclick=function() {
+    document.getElementById("jimmy").onclick=function() {
 
         var myAudio1 = document.getElementById("jones");
         myAudio1.play();
-        document.getElementById("jimmy").style.width = "250px";
+        // document.getElementById("jimmy").style.width = "250px";
        // document.getElementById("jones").style.width = "500px";
             
     };
-*/   
-
-        var myAudio = document.getElementById("jones");
-        var isPlaying = false;
-
-        function togglePlay1() {
-            if (isPlaying) {
-            jones.pause()
-        } else {
-            jones.play();
-        }
-        };
-        jones.onplaying = function() {
-            isPlaying = true;
-        };
-        jones.onpause = function() {
-            isPlaying = false;
-        };
-                
-        
-/*        
+    
     document.getElementById("marc").onclick=function() {
         
         var myAudio2 = document.getElementById("cruisin");
@@ -320,50 +300,13 @@ table {
          alert("Marc says 'To Control this Audio: Use the 'Cruisin' audio bar below'");
         
     };
-*/
-        
-var myAudio = document.getElementById("cruisin");
-var isPlaying = false;
-
-        function togglePlay3() {
-          if (isPlaying) {
-            cruisin.pause()
-          } else {
-            cruisin.play();
-          }
-        };
-        cruisin.onplaying = function() {
-          isPlaying = true;
-        };
-        cruisin.onpause = function() {
-          isPlaying = false;
-        };        
     
- /*
-        document.getElementById("tommy").onclick=function() {
+    document.getElementById("tommy").onclick=function() {
         
         var myAudio3 = document.getElementById("sorry");
         myAudio3.play();
          alert("Tommy says 'To Control this Audio: Use the 'Sorry for You' audio bar below'");
     };
-*/
-    
-        var myAudio = document.getElementById("sorry");
-        var isPlaying = false;
-
-        function togglePlay2() {
-          if (isPlaying) {
-            sorry.pause()
-          } else {
-            sorry.play();
-          }
-        };
-        sorry.onplaying = function() {
-          isPlaying = true;
-        };
-        sorry.onpause = function() {
-          isPlaying = false;
-        };        
     
     
     </script>
