@@ -43,13 +43,6 @@
   padding-top: 37px;    
  }
     
- #wrapper{
-        background-image: url("boots.jpg");
-              height: 400px;
-              width: 100%;
-              background-size: cover;
-    }
-    
 div {
     overflow: hidden;
     }
@@ -166,7 +159,7 @@ table {
 <div class="navbar navbar-default navbar-fixed-top" id="header">
          <h1 align="center" >Macisso Brothers</h1>     
     </div>
- 
+
 <div classs="container" id=topbar>
 <iframe src="https://www.youtube.com/embed/MPae3bN96V8" frameborder="0" allowfullscreen></iframe>
 
@@ -179,7 +172,7 @@ table {
 <iframe  src="https://www.youtube.com/embed/vT_Htroo44E" frameborder="0" allowfullscreen></iframe>
 </div>
      <div class="break"></div>  
-
+ 
 <div class="container" id="perform">
      <h3>Performing at ..</h3>
   
@@ -278,7 +271,7 @@ table {
     <audio controls><source src="audio/TenneseeStud.mp3"/></audio>
     <h4>Cruisin - Marc</h4>
     <audio id="cruisin" controls><source src="audio/Cruisin.mp3"/></audio> 
- </div>
+</div>
 
     
     <script>

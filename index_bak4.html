@@ -43,13 +43,6 @@
   padding-top: 37px;    
  }
     
- #wrapper{
-        background-image: url("boots.jpg");
-              height: 400px;
-              width: 100%;
-              background-size: cover;
-    }
-    
 div {
     overflow: hidden;
     }
@@ -166,7 +159,7 @@ table {
 <div class="navbar navbar-default navbar-fixed-top" id="header">
          <h1 align="center" >Macisso Brothers</h1>     
     </div>
- 
+
 <div classs="container" id=topbar>
 <iframe src="https://www.youtube.com/embed/MPae3bN96V8" frameborder="0" allowfullscreen></iframe>
 
@@ -179,7 +172,7 @@ table {
 <iframe  src="https://www.youtube.com/embed/vT_Htroo44E" frameborder="0" allowfullscreen></iframe>
 </div>
      <div class="break"></div>  
-
+ 
 <div class="container" id="perform">
      <h3>Performing at ..</h3>
   
@@ -257,7 +250,7 @@ table {
     <h4>Big River - Tommy </h4>
     <audio controls><source src="audio/BigRiver.mp3"/></audio> 
      <h4>Sorry For You - Tommy</h4>
-    <audio id="sorry" controls><source src="audio/Sorry4UFriend.mp3"/></audio>
+    <audio id=songs[sorry] controls><source src="audio/Sorry4UFriend.mp3"/></audio>
 </div>
     
       
@@ -271,26 +264,25 @@ table {
 
 <div id="audio2">
     <h4>Me And Mrs Jones - Jimmy</h4>
-    <audio id="jones" controls><source src="audio/MeAndMrsJones.mp3"/></audio> 
+    <audio id=songs[jones] controls><source src="audio/MeAndMrsJones.mp3"/></audio> 
     <h4>Walking The Floor - Tommy</h4>
     <audio controls><source src="audio/WalkingTheFloor.mp3"></audio> 
     <h4>Tennesee Stud - Tommy</h4>
     <audio controls><source src="audio/TenneseeStud.mp3"/></audio>
     <h4>Cruisin - Marc</h4>
-    <audio id="cruisin" controls><source src="audio/Cruisin.mp3"/></audio> 
- </div>
+    <audio id=songs[cruisin] controls><source src="audio/Cruisin.mp3"/></audio> 
+</div>
 
     
     <script>
+/* 
     
-    
-/*    $("#jimmy").click(function() {
+   $("#jimmy").click(function() {
                       
-                      alert("Jimmy");
+       document.getElementById("jimmy").style.width = "250px";
     });
     
-        
-    
+
         document.getElementById("jimmy").onclick=function() {
 
         var myAudio1 = document.getElementById("jones");
@@ -300,7 +292,8 @@ table {
             
     };
 */   
-
+var songs = ["jones", "sorry","cruisin"];
+        
         var myAudio = document.getElementById("jones");
         var isPlaying = false;
 
@@ -328,6 +321,10 @@ table {
         
     };
 */
+        
+
+        
+        
         
 var myAudio = document.getElementById("cruisin");
 var isPlaying = false;
