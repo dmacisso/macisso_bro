@@ -20,8 +20,7 @@
       <style>
           .navbar {
               background-color: #7dcafa;
-              border: 0;
-                          
+              border: 0;                                    
           }
           
           .navbar-brand {
@@ -36,7 +35,9 @@
               height: 400px;
               width: 100%;
               background-size: cover;
-          }
+              color: whitesmoke;
+          }          
+          
           #topRow {
               
               margin-top: 100px;
@@ -49,6 +50,30 @@
           
           .bold {
             font-weight: bold;
+          }
+          
+          #about {
+            background-color: burlywood;
+            width: 100%;
+             
+          }
+            
+        #artist {
+            padding-left: 100px;
+           
+          }
+          
+          #artistPic {
+              
+             
+              }
+                                     
+          
+          
+          #perform{
+            
+              height: 320px;
+              width: 150px;
           }
 
           .marginTop {
@@ -137,7 +162,33 @@
                   
                     <p>Appearing locally in the month of July</p>
                     
-                   <!--
+                    
+ <div class="container" id="perform">
+     <h3>Performing at ..</h3>
+  
+        <form action="http://www.thefrogandturtle.com" target="_blank">
+        <input class="btn btn-success" type="submit" value="Frog and Turtle" />
+        </form>
+        <h6>Westbrook, Maine</h6>
+ 
+        <form action="http://embassysuites3.hilton.com/en/hotels/maine/embassy-suites-by-hilton-portland-maine-PWMAPES/index.html" target="_blank">
+        <input  class="btn btn-success" type="submit"value="Embassy Suites" />
+        </form>
+         <h6>So. Portland, Maine</h6>
+
+        <form action="http://www.hbamaine.com/" target="_blank">
+        <input class="btn btn-success" type="submit" value="Higgins Beach" />
+        </form>
+        <h6>Scarboro, Maine</h6>
+     
+   
+        <form action="http://italianheritagecenter.com/" target="_blank">
+        <input class="btn btn-success" type="submit" value="Italian Heritage Ctr" />
+        </form>
+        <h6>Portland, Maine</h6>
+</div>
+                    
+   <!--
                     <p class="bold marginTop">Interested? Join our mailing list </p>
                     
                     <form>
@@ -161,26 +212,36 @@
       <div class="container contentContainer" id="about">
         <div class="row" class="center">
             <h1 class="center title">Enjoy The Music</h1>  
-            <p class="lead center">Summay of the music</p>          
+            <p class="lead center">Summay of the music.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            
         </div>
-          <div class="row marginBottom">
-              <div class="col-md-4 margin-top">
-                  <h2><span class="glyphicon glyphicon-music"></span>  Header</h2>
-                  <p>A brief desciption of the songs/artist</p>                  
-                  <button class="btn btn-success marginTop">Sign Up!</button>            
+          <div class="row"  id="artist">
+              <div class="col-md-4"  id="artistPic">
+                  <h2><span class="glyphicon glyphicon-music"></span> Tommy</h2>
+                  <p>Lives in Louisville,KY. Features vocals and guitar......</p>
+                  <a onClick="togglePlay2()"><img id ="tommy" src="images/tomm.jpg"/> </a>
+                  <audio id="sorry" controls><source src="audio/Sorry4UFriend.mp3"/></audio> 
+                  <h4>Sorry For You My Friend</h4>
+               <!--   <button class="btn btn-success marginTop">Listen!</button> -->
                 </div>
               
-              <div class="col-md-4 margin-top">
-                  <h2><span class="glyphicon glyphicon-music"></span>  Header</h2>
-                  <p>A brief desciption of the songs/artist</p>                  
-                  <button class="btn btn-success marginTop">Sign Up!</button>            
+              <div class="col-md-4 ">
+                  <h2><span class="glyphicon glyphicon-music"></span>  Marc</h2>
+                   <p>Lives in Los Angesles, CA. Features sax, flute, harp, vocals etc. </p>
+                  <a onClick="togglePlay3()"><img id="marc" src="images/marc_sax.jpg"/> </a>
+                  <audio id="cruisin" controls><source src="audio/Cruisin.mp3"/></audio> 
+                   <h4>Cruisin</h4>
+               <!--   <button class="btn btn-success marginTop">Listen!</button> -->
                 </div>
               
-           <div class="col-md-4 margin-top">
-                  <h2><span class="glyphicon glyphicon-music"></span>  Header</h2>
-                  <p>A brief desciption of the songs/artist</p>                  
-                  <button class="btn btn-success marginTop">Sign Up!</button>            
-                </div>               
+           <div class="col-md-4 ">
+                  <h2><span class="glyphicon glyphicon-music"></span>  Jimmy</h2>
+                  <p>Lives in Westbrook, Maine. Features base guitar and vocals </p>
+                  <a onClick="togglePlay1()" ><img id="jimmy" src="images/jimmy.jpg"/> </a>
+                  <audio id="jones" controls><source src="audio/MeAndMrsJones.mp3"/></audio> 
+                  <h4>Me And Mrs Jones</h4>
+          <!--        <button class="btn btn-success marginTop">Listen!</button> -->
+            </div>               
             </div>      
       </div>
       
