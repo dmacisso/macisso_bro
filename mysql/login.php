@@ -24,8 +24,6 @@ if ($_POST['submit'] == "Sign UP") {
     if ($error) $errors =  "<br \>This were error(s) in your submission;".$error;
     else {
        
-       
-
         $query = "SELECT * FROM `users` WHERE email='".mysqli_real_escape_string($link, $_POST['email'])."'";  
         
         $result = mysqli_query($link, $query);                          //run query
@@ -35,6 +33,7 @@ if ($_POST['submit'] == "Sign UP") {
        $results = mysqli_num_rows($result);
     
         if ($results) $error =  "That email address is already registered. Do you want to log in?";
+        
         else {                
         
         $query="INSERT INTO `users` (`email`, `password`) VALUES ('".mysqli_real_escape_string($link, $_POST['email'])."','".md5(md5($_POST['email']).$_POST['password'])."')";
