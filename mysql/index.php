@@ -132,6 +132,12 @@
 
                           echo '<div class="alert alert-danger">'.addslashes($error).'</div>';
                          }
+                    
+                    if ($message) {
+                        
+                        echo '<div class="alert alert-success">'.addslashes($message).'</dev>';
+                        
+                    }
 
                 
                                              
@@ -181,25 +187,3 @@
 </html>
 
 
-
-<!--
-<form method="post">
-
-<input type="email" name="email" id="email" value="<?php echo addslashes($_POST['email']); ?>"/>
-
-<input type="password" name="password" value="<?php echo addslashes($_POST['password']); ?> "/>
-    
-<input type="submit" name="submit"  value="Sign UP"   />
-
-</form>
-
-<form method="post">
-
-<input type="email" name="loginemail" id="loginemail" value="<?php echo addslashes($_POST['email']); ?>"/>
-
-<input type="password" name="loginpassword" value="<?php echo addslashes($_POST['password']); ?> "/>
-    
-<input type="submit" name="submit"  value="Log In"   />
-
-</form>
--->

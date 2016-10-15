@@ -3,6 +3,12 @@
 
 session_start();
 
+if ($_GET["logout"]==1 AND $_SESSION['id'] ) {
+    session_destroy();
+    
+    $message = "You have been logged out.. Have a nice day";
+}
+
 include("connection.php");
 
 
@@ -16,12 +22,12 @@ if ($_POST['submit'] == "Sign UP") {
         else {
             
             if(strlen($_POST['password']) <8) $error .= "<br /> The password must be at least 8 characters";
-            if (!preg_match('`[A-Z]`', $_POST['password'])) $error .= "<br \>The password needs at least one capital letter";
+            if (!preg_match('`/[A-Z/]`', $_POST['password'])) $error .= "<br \>The password needs at least one capital letter";
                     
         }    
     
     
-    if ($error) $errors =  "<br \>This were error(s) in your submission;".$error;
+    if ($error) $error =  "<br \>This were error(s) in your submission;".$error;
     else {
        
         $query = "SELECT * FROM `users` WHERE email='".mysqli_real_escape_string($link, $_POST['email'])."'";  
@@ -43,11 +49,11 @@ if ($_POST['submit'] == "Sign UP") {
             
             mysqli_query($link, $query);   
                                                        
-            echo  "You have been signed up!";
+            $success =  "You have been signed up!";
             
             $_SESSION['id'] = mysqli_insert_id($link);
             
-            print_r($_SESSION);
+           header("Location:mainpage.php");
             
             //Redirect to logged in page.
             
@@ -75,7 +81,8 @@ if ($_POST['submit'] == "Sign UP") {
          
          $_SESSION['id'] = $row['id'];
          
-         print_r($_SESSION);
+         
+          header("Location:mainpage.php");
          
          //Redirect to logged in page
       } else {
