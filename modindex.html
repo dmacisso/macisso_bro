@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -12,9 +11,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--  FontAwesome Icons -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,9 +47,8 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#topContainer">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#music">Our Music</a></li>
-                    <li><a href="#displayContact"  data-toggle="modal" data-target="#displayContact" >Contact</a></li>
-<!--                    <li><button type="button"  data-toggle="modal" data-target="#displayContact">Contact</button></li>-->
+                    <li><a href="#footer">Our Music</a></li>
+                    <li><a href="#contacts">Contact Info.</a></li>
                 </ul>
 
             </div>
@@ -77,9 +75,25 @@
         </div>
         <!-- row -->
 
+  <!-- VIDEO FEATURETEE
+         =======================================================================================  -->
+    <section id="featurette">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2>Feature Video</h2>
+                    <iframe src="https://www.youtube.com/embed/MPae3bN96V8" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- col -->
+            </div>
+            <!--row-->
+        </div>
+        <!-- container -->
+    </section>
 
-
-
+    </div><! top container -->
+       
+       
         <div class="container" id="perform">
             <h3 class="marginTop">Performing at ..</h3>
 
@@ -129,7 +143,7 @@
         --------------------------------------------------------------------------------------------------------------------  -->
 
     <div class="container contentContainer" id="about">
-        <div class="row center">
+        <div class="row" class="center">
             <h1 class="center title">~The Macisso Brothers~</h1>
             <p class="lead lrMargin">...have been singing and playing music since childhood. Beginning in Portland, Maine, Tommy, at age twelve was bellowing the sounds of Johnny Horton, Claude King, and The Everly Brothers. He would pick up his guitar and start strumming the tunes of his favorite <i>Country and Western</i> singers such as Hank Williams, Ernest Tubb, Dick Curless and most notably Johnny Cash. After a tour in Viet Nam with the Marine Corps, Tommy returned to Westbrook, Maine and performed in area lounges. He even made a few appearances on the "Ken MacKenzie Show", a locally televised country and western TV program. He now lives in Louisville, Kentucky and travels to Maine each summer to visit family and friends while performing with his brothers.</p>
             <p class="lead lrMargin">Marc's interest in music started in the cradle. As an infant he would be mesmerized as his dad sang to him. Influenced by his older brother, Marc’s first instrument was the guitar. By early teens he soon progressed to the harmonica, playing at every opportunity from the streets of downtown Westbrook to the school hallways. At seventeen, he made a few radio and club appearances playing jazz harmonica with Don Doane’s Band. <a href="http://www.marcmacisso.com/bio.php" target="_blank">  Read more of Marc's bio here..</a> He has recently made several appearance with legenday Al Stewart of "Year of the Cat", <a href="https://www.youtube.com/watch?v=pg1P_FdvTHk" target="_blank"> "Time Passages"</a> and <a href="https://www.youtube.com/watch?v=ogUNi2r0ues" target="_blank">"Night Train to Munich"</a> fame. </p>
@@ -141,7 +155,7 @@
             <div class="col-md-4" id="artistPic">
                 <h2><span class="glyphicon glyphicon-music"></span> Tommy</h2>
                 <p>Lives in Louisville,KY. Features vocals and guitar......</p>
-                <a><img id="tommy" src="images/tomm.jpg" alt="Tommy" /> </a>
+                <a><img id="tommy" src="images/tomm.jpg" /> </a>
                 <audio id="sorry" controls><source src="audio/Sorry4UFriend.mp3"/></audio>
                 <h4>Sorry For You My Friend</h4>
                 <!--   <button class="btn btn-success marginTop">Listen!</button> -->
@@ -170,10 +184,10 @@
     <!-- Our Performance Container 
          --------------------------------------------------------------------------------------------- -->
 
-    <div class="container contentContainer" id="music">
+    <div class="container contentContainer" id="footer">
         <div class="row">
             <h1 class="center title">View Our Performances!</h1>
-            <div class="container" id=video>
+            <div classs="container" id=video>
                 <iframe src="https://www.youtube.com/embed/MPae3bN96V8" frameborder="0" allowfullscreen></iframe>
 
                 <iframe src="https://www.youtube.com/embed/aVvxa6DCXgo" frameborder="0" allowfullscreen></iframe>
@@ -223,59 +237,35 @@
         </div>
 
     </div>
-    
-     <!--  Modal    
-    ---------------------------------------------------------------------------------------------------- -->
-        <div class="modal fade" id="displayContact">
-            <div class="modal-dialog modal-sm">
 
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+    <!-- Contacts 
+      ----------------------------------------------------------------------------------------------------------- -->
 
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <p class="name-text">
-                                <span class="glyphicon glyphicon-music"></span>
-                                <span class="name-sign">Marc Macisso</span>
-                            </p>
-                        </div>
-                        <div class="row">
-                            <p class="email-text">
-                                <span class="glyphicon glyphicon-envelope email-icon"></span>
-                                <span class="email-sign">mmacisso@verizon.net</span>
-                            </p>
-                        </div>
-                        <div class="row">
-                            <p class="phone-text">
-                                <span class="glyphicon glyphicon-phone-alt phone-icon"></span>
-                                <span class="phone-sign">661.266.0009</span>
-                            </p>
-                        </div>
+    <div class="container contentContainer" id="contacts">
 
-                    </div>
-                    <div class="modal-footer">
-
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                    </div>
-                </div>
-            </div>
+        <!--
+          <div class="container" ng-repeat="contact in contacts">
+        <div class="col-xs-4">
+          -->
+        <div class="rob">
+            <p class="name-text">Marc Macisso</p>
+        </div>
+        <div class="row">
+            <p class="email-text">
+                <span class="glyphicon glyphicon-envelope email-icon"></span>
+                <span class="email-sign">mmacisso@verizon.net</span>
+                </a>
+            </p>
+            <!--<a><img id ="sax" src="images/sax.jpg"/> </a> -->
+        </div>
+        <div class="row">
+            <p class="phone-text">
+                <span class="glyphicon glyphicon-phone-alt phone-icon"></span>
+                <span class="phone-sign">661.266.0009</span>
+            </p>
         </div>
 
-
-    <!-- Footer
-----------------------------------------------------------------------------------------------------------------------------   
-    <nav class="navbar navbar-default navbar-fixed-bottom id=footer">
-        <div class="container">
-            <h6>footer</h6>
-        </div>
-    </nav>
-
--->
-    
-   
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -288,6 +278,7 @@
             $(".nav").find(".active").removeClass("active");
             $(this).parent().addClass("active");
         });
+
     </script>
 </body>
 
