@@ -94,14 +94,34 @@ body {
     width: 100%;
 }
 
-#video {
+.video  {
+background-image: url("../images/IMG_2581.JPG");
+    width: 100%;
+    background-size: cover;
+    padding-top: 70px;
+    background-color: #adbfc9;
+    margin: 25px auto 0 auto;
+    padding-top: 30px;
+    color: beige;
+   
+}
+
+video {
+    margin-bottom: 1px;
+}
+
+h3 {
+    color: blue;
+    margin-top: 0;
+}
+#videoid {
     margin: 25px auto 0 auto;
     padding-top: 30px;
 }
 
 iframe {
-    height: 200px;
-    width: 290px;
+    height: 320px;
+    width: 340px;
 }
 
 #audio1 {
